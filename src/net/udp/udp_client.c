@@ -31,6 +31,8 @@ int create_client_socket(char* hostname_in, char* port_in, host_t* server_in, in
     //Socket has been successfully created
     break;
   }
+
+  syslog(LOG_DEBUG, "create_client_socket: Storing information from connection into specified locations");
   //Copy server information to the output location
   memcpy(&server_in->address, address_iterator->ai_addr, address_iterator->ai_addrlen);
   memcpy(&server_in->address_length, &address_iterator->ai_addrlen, sizeof(address_iterator->ai_addrlen));
