@@ -1,4 +1,4 @@
-# c Utilities
+# C-Utilities
 Some helpful library items
 
 Currently utilities
