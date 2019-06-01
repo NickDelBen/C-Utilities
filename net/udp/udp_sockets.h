@@ -17,7 +17,7 @@
 #include <stdlib.h>
 #include <syslog.h>
 #include <netdb.h>
- #include <poll.h>
+#include <poll.h>
 #include <sys/socket.h>
 #include <sys/types.h>
 
